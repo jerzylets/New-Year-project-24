@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0px auto;
+  max-width: 1920px;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-16);
+  color: var(--black-color);
+  background-color: var(--grey-color);
+  /* border-style: none; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+
+a svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+
+button svg path,
+rect,
+circle {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+
+/* global custom */
+:root {
+  --white-color: #fff;
+  --black-color: #0E0B3D;
+  --white-dark: #e5e5e5;
+  --black--transparent: rgba(0, 0, 0, 0.5);
+  --grey-dark: #535479;
+  --grey-color: #f5f5f5;
+  --grey-light: #cacaca;
+  --orange-dark: #FF9900;
+  --orange-light: #FFB84D;
+  --red-brick: #E1670E;
+  --green-light: #97EE3F;
+  --gap-big: 85px;
+  --gap-med: 50px;
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-17: 17px;
+  --font-22: 22px;
+  --font-24: 24px;
+  --font-32: 32px;
+  --font-54: 54px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 25px 39px;
+  border-radius: var(--font-16);
+  font-weight: 700;
+  font-size: var(--font-16);
+  line-height: var(--font-20);
+  color: var(--white-color);
+  background-color: var(--orange-dark);
+}
+
+.btn-status {
+  transition: background-color 0.6s ease-in-out;
+}
+
+.btn-status:focus {
+  background-color: var(--orange-light);
+}
+
+.btn-status:hover {
+  background-color: var(--orange-light);
+}
+
+.btn-status:active {
+  background-color: var(--red-brick);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - 150px);
+}
+
+.image {
+  border-radius: var(--font-32);
+  overflow: hidden;
+}
+
+.paragraph {
+  font-size: var(--font-16);
+  line-height: var(--font-32);
+}
+
+.section__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.section__margin {
+  margin-bottom: var(--gap-med);
+}
+
+.section__margin_double {
+  margin-bottom: calc(var(--gap-med) * 2);
+}
+
+.minor-header {
+  margin-bottom: 8px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+/* Header */
+.header {
+  position: relative;
+  padding: 32px 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 16px 16px;
+  background-color: var(--white-color);
+}
+
+.header__logo {
+  position: absolute;
+  left: 34px;
+  font-size: var(--font-32);
+}
+
+.nav__list {
+  gap: 44px;
+}
+
+.header__link {
+  font-size: var(--font-14);
+  color: var(--grey-dark);
+}
+
+/* Main */
+.main__descr {
+  padding: 20px;
+  border-right: 1px solid var(--grey-light);
+}
+
+.main__headline {
+  margin-bottom: var(--font-14);
+  font-size: var(--font-54);
+  line-height: 133%;
+  letter-spacing: 2.5px;
+}
+
+.main__text {
+  font-size: var(--font-16);
+  line-height: 212%;
+  letter-spacing: .18px;
+}
+
+.main__video {
+  padding: 20px;
+}
+
+.test {
+  padding: 20px;
+  justify-content: center;
+}
+
+/* horoscope */
+.horoscope__grid {
+  gap: var(--font-32);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.horoscope__title {
+  margin-bottom: var(--font-20);
+}
