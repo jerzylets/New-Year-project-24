@@ -19,35 +19,40 @@
 
 <body>
   <header class="header flex">
-    <a href="#" target="_self" class="logo header__logo">
+    <a class="logo header__logo btn-status" href="#" target="_self">
       Новый год 2024
     </a>
     <nav class="nav header__nav">
       <ul class="nav__list list-reset flex">
         <li class="nav__item">
-          <a href="test.html" class="nav__link header__link">
+          <a class="nav__link header__link btn-status" href="test.html">
             Тест
           </a>
         </li>
         <li class="nav__item">
-          <a href="horoscope.html" class="nav__link header__link">
+          <a class="nav__link header__link btn-status" href="horoscope.html">
             Гороскоп
           </a>
         </li>
         <li class="nav__item">
-          <a href="gallery.html" class="nav__link header__link">
+          <a class="nav__link header__link btn-status" href="gallery.html">
             Галерея
           </a>
         </li>
         <li class="nav__item">
-          <a href="https://t.me/addstickers/cattent" class="nav__link header__link" target="_blank">
+          <a class="nav__link header__link btn-status" href="https://t.me/addstickers/cattent" target="_blank">
             Стикеры
           </a>
         </li>
       </ul>
     </nav>
+    <button class="btn-reset burger btn-status">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </header>
-  <main class="main flex">
+  <main class="main hero flex">
     <div class="main__descr">
       <h1 class="main__headline">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed labore assumenda minima repudiandae consequatur hic
@@ -64,11 +69,12 @@
         inventore labore ullam soluta?
       </p>
     </div>
-    <iframe class="main__video" width="560" height="315"
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=d6l1cqzvEEMC-B8Q" title="YouTube video player" frameborder="0"
+    <iframe class="main__video" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=d6l1cqzvEEMC-B8Q"
+      title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>
   </main>
 </body>
+<script src="js/burger.js"></script>
 
 </html>

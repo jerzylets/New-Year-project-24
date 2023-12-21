@@ -2,4 +2,121 @@
   .header {
     justify-content: end;
   }
+
+  .main {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    z-index: 2000;
+  }
+
+  .header__nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: max(35%, 250px);
+    height: 100vh;
+    z-index: 1000;
+    padding: 90px 20px;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    background-color: var(--white-color);
+    overflow-y: auto;
+    visibility: hidden;
+    transform: translateX(120%);
+    transition: visibility .4s ease-in-out, transform .4s ease-in-out;
+  }
+
+  .header__nav--active {
+    visibility: visible;
+    transform: none;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .burger {
+    display: inline-block;
+  }
+
+  .burger--active .burger__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger--active {
+    z-index: 2000;
+  }
+
+  .burger--active:focus {
+    outline: none;
+  }
+
+  .burger--active .burger__line:first-child {
+    left: 25%;
+    top: 50%;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+
+  .burger--active .burger__line:last-child {
+    bottom: auto;
+    left: 25%;
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+
+  /* main */
+  .main {
+    max-width: 100%;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .main__descr {
+    padding: 20px;
+    border-top: 1px solid var(--grey-light);
+    border-right: none;
+  }
+
+  .main__headline {
+    font-size: var(--font-32);
+  }
+
+  .main__text {
+    font-size: var(--font-14);
+  }
+
+  .main__video {
+    max-width: 100%;
+  }
+
+  /* horoscope */
+  .horoscope__title {
+    font-size: var(--font-17);
+  }
+
+  .horoscope__descr {
+    font-size: var(--font-14);
+  }
+}
+
+@media (max-width: 524px) {
+  .header {
+    padding: 30px 22px;
+  }
+
+  .header__logo {
+    left: 30px;
+    font-size: var(--font-24);
+  }
 }
