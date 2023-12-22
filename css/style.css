@@ -230,6 +230,7 @@ circle {
 }
 
 .main__descr {
+  width: 50%;
   padding: 20px;
   border-right: 1px solid var(--grey-light);
 }
@@ -249,7 +250,7 @@ circle {
 
 .main__video {
   padding: 20px;
-  width: max(560px, 50%);
+  width: 100%;
 }
 
 .test {
