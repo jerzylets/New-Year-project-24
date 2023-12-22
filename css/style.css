@@ -142,22 +142,8 @@ circle {
   line-height: var(--font-32);
 }
 
-.section__title {
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 59px;
-}
-
-.section__margin {
-  margin-bottom: var(--gap-med);
-}
-
-.section__margin_double {
-  margin-bottom: calc(var(--gap-med) * 2);
-}
-
-.minor-header {
-  margin-bottom: 8px;
+.font-20 {
+  font-size: 20px;
 }
 
 .logo {
@@ -179,6 +165,7 @@ circle {
   position: absolute;
   left: 34px;
   font-size: var(--font-32);
+  user-select: none;
 }
 
 .nav__list {
@@ -186,7 +173,7 @@ circle {
 }
 
 .header__link {
-  font-size: var(--font-14);
+  font-size: 18px;
   color: var(--grey-dark);
 }
 
@@ -223,6 +210,10 @@ circle {
 }
 
 /* Main */
+.hero {
+  flex-direction: column;
+}
+
 .main {
   max-width: 60%;
   margin: 0px auto;
@@ -230,9 +221,8 @@ circle {
 }
 
 .main__descr {
-  width: 50%;
   padding: 20px;
-  border-right: 1px solid var(--grey-light);
+  border-bottom: 1px solid var(--grey-light);
 }
 
 .main__headline {
@@ -243,9 +233,12 @@ circle {
 }
 
 .main__text {
-  font-size: var(--font-16);
   line-height: 212%;
   letter-spacing: .18px;
+}
+
+.main__text:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .main__video {
@@ -253,9 +246,19 @@ circle {
   width: 100%;
 }
 
+/* test */
 .test {
-  padding: 20px;
+  padding: 100px 20px 20px 20px;
   justify-content: center;
+}
+
+.test__descr {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.test__form {
+  width: 100%;
 }
 
 /* horoscope */
@@ -263,6 +266,14 @@ circle {
   gap: var(--font-32);
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+}
+
+.horoscope__item {
+  padding-bottom: 20px;
+}
+
+.horoscope__item:not(:last-child) {
+  border-bottom: 1px solid var(--grey-light);
 }
 
 .horoscope__title {
