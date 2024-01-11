@@ -257,6 +257,10 @@ circle {
   font-size: 22px;
 }
 
+.test__link {
+  font-size: 22px;
+}
+
 .test__form {
   width: 100%;
 }
